@@ -16,7 +16,7 @@ body {
   text-align: center;
 }
 .rotate img {
-  rotate: (180deg)
+  transform: rotate(180deg)
 /* Add transform: rotate(180deg); to this selector. 
   (This will flip the image of the dog on its head.)
   Try other values (even negative numbers) for rotate and see what happens. 
@@ -34,7 +34,7 @@ body {
   background-color: red;
   margin: 0 auto;
   scale: (2);
-  scale(120,40);
+  scale: (120,40);
   /* give this a property of transform: scale(2); 
     (this will increase the size of the red square).
       Try out scaling along the x- and y-axes using scaleX() and scaleY() or the shorthand of scale(x,y).
@@ -52,7 +52,7 @@ body {
   width: 100px;
   height: 100px;
   background-color: blue;
-  translate(80%, 40%)
+  translate: (80%, 40%);
   /* Give this a property of transform: translate(80%, 40%);
       Note: You should see the blue square move from the left by the first value and the top by the second value.
         Try out translate along the x- and y-axes using translateX() and translateY() or the shorthand of scale(x,y).

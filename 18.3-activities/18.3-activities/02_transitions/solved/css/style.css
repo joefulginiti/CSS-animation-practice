@@ -1,0 +1,194 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.body {
+  padding: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  font-family: helvetica, arial, sans-serif;
+  color: white;
+  grid-template-areas:
+  "hover"
+  "disabled"
+  ;
+  height: 500px;
+
+}
+.hoverMe {
+  grid-area: hover;
+  background-color: red;
+  opacity: .2;
+  color: white;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+  transition: 0.3s;
+}
+/* active state */
+.hoverMe:hover {
+  background-color:blue;
+  opacity: 1;
+  height: 100px;
+  width: 300px;
+  margin-top: 50px;
+  transform: translate3d(100px,0,0)
+
+}
+
+.column {
+  column-count: 3;
+  column-fill: balance;
+  column-gap: 2%;
+}
+
+.gridContainerPink {
+  /* padding-top: 2.5%; */
+  padding-bottom: 2.5%;
+  /* margin-top: 2.5%; */
+  background-color: #EFBCD2;
+  /* display: grid; */
+  grid-auto-columns: 15%;
+  grid-template-columns: 1fr 2.5fr;
+  color: black;
+  grid-template-areas: 
+  "heading" "maintext"
+  "heading" "maintext2"
+}
+
+.box{
+  /* width: 200px;
+  height: 200px; */
+  /* background-color: #64B6AC;
+  text-align: center;
+  line-height: 200px; */
+  /* margin: 50em 0;
+  margin-left: calc(50% - 100px); */
+  transition: transform 0.5s, opacity 0.5s;
+  /* color: #fff;
+  font-weight: bold; */
+}
+
+.box.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.box.left{
+  transform: translateX(-200px);
+  opacity: 0;
+}
+
+.flexPink {
+
+}
+
+.heading {
+  padding: 2.5%;
+  margin-left: 16.7%;
+  font-weight: bold;
+  font-size: 24px;
+  color: #3171b4;
+  /* grid-area: heading; */
+}
+
+.maintext {
+  /* padding-left: 5%;
+  padding-right: 16.7%; */
+  font-size: 16px;
+  color: black;
+  /* grid-area: maintext; */
+}
+
+.maintext2 {
+  padding-top: 2.5%;
+  /* padding-left: 5%;
+  padding-right: 16.7%; */
+  font-size: 16px;
+  color: black;
+  /* grid-area: main */
+}
+
+
+.gridContainerWhite {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  background-color: #fff8d9;
+  display: grid;
+  grid-auto-columns: 15%;
+  grid-template-columns: 1fr 2fr;
+  color: black;
+  grid-template-areas: 
+  "heading" "maintext"
+}
+
+.footerCaseStudy {
+    background-color: #411340;
+    display: block;
+    grid-auto-columns: 15%;
+    grid-template-columns: 1fr;
+    color: white;
+    text-align: center;
+    grid-template-areas:
+    "footerCaseStudyText"
+    "footerSocialMedia"
+    "footerCopyright"
+}
+
+.footerCaseStudyText {
+  text-align: center;
+  padding-top: 2.5%;
+}
+
+.footerSocialMedia {
+  text-align: center;
+}
+
+.footerCopyright {
+  text-align: center;
+  padding-bottom: 2.5%;
+  font-size: 10px;
+}
+
+#projectTitle {
+  grid-area: project-Title;
+  color: black;
+  text-align:center;
+}
+
+#caseStudyTitle {
+  /* padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  margin-top: 2.5%; */
+  background-color: #fff8d9;
+  /* height: 200px; */
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "caseStudyImage" "titleCard";
+
+}
+
+#caseStudyImage {
+  grid-area: caseStudyImage;
+  /* width: 40%;
+  padding: 50px;
+  margin: 0%; */
+  /* background-image: url(../images/alaskaTile.jpg); */
+  
+}
+
+#titleCard {
+  grid-area: "titleCard";
+  background-color: white;
+  border-style: solid;
+  box-shadow: 5px 5px 5px gray;
+  width: 45%;
+}
